@@ -25,7 +25,7 @@ export const works = [
   {
     id: 'yuelan-time',
     category: '网站',
-    title: '悦览时光网站前端设计与实现',
+    title: '《悦览时光》网站前端设计与实现',
     date: '2026.05',
     cover: img('yuelan-home.jpg'),
     gallery: [img('yuelan-bookshelf.jpg')],
