@@ -76,7 +76,7 @@ function clearSearch() {
         v-for="work in filteredWorks"
         :key="work.id"
         :work="work"
-        :show-gallery="work.id === 'chengyi-pavilion'"
+        :show-gallery="Boolean(work.gallery)"
       />
     </main>
   </div>

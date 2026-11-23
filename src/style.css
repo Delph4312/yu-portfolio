@@ -280,7 +280,6 @@ a {
 }
 
 .work-link:hover,
-.view-link:hover,
 .project-list a:hover,
 .about-contact a:hover {
   color: var(--deep-green);
@@ -291,10 +290,6 @@ a {
   flex: none;
   font-size: 12px;
   color: #555;
-}
-
-.work-cover-link {
-  display: block;
 }
 
 .work-cover {
@@ -345,15 +340,6 @@ a {
   background: #eef8f2;
   color: #3f9c72;
   font-size: 11px;
-}
-
-.view-link {
-  margin-left: auto;
-  font-size: 12px;
-  color: var(--deep-green);
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
 }
 
 /* ---------- category ---------- */

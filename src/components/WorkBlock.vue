@@ -24,9 +24,7 @@ defineProps({
       <time class="work-date">{{ work.date }}</time>
     </div>
 
-    <a :href="work.links[0].url" target="_blank" rel="noopener noreferrer" class="work-cover-link">
-      <img :src="work.cover" :alt="work.title + ' 页面截图'" class="work-cover" />
-    </a>
+    <img :src="work.cover" :alt="work.title + ' 页面截图'" class="work-cover" />
 
     <div class="work-body">
       <p v-for="(paragraph, index) in work.paragraphs" :key="index">{{ paragraph }}</p>
@@ -34,20 +32,16 @@ defineProps({
     </div>
 
     <div v-if="showGallery && work.gallery" class="work-gallery">
-      <a
+      <img
         v-for="(image, index) in work.gallery"
-        :key="image"
-        :href="work.links[0].url"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img :src="image" :alt="`${work.title} 页面截图 ${index + 1}`" />
-      </a>
+        :key="index"
+        :src="image"
+        :alt="`${work.title} 页面截图 ${index + 1}`"
+      />
     </div>
 
     <div class="work-tags">
       <span v-for="tag in work.tags" :key="tag" class="tag">{{ tag }}</span>
-      <a :href="work.links[0].url" target="_blank" rel="noopener noreferrer" class="view-link">访问网站 →</a>
     </div>
   </article>
 </template>

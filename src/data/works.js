@@ -7,7 +7,7 @@ export const works = [
     category: '游戏',
     title: '网页解谜游戏《小鱼》',
     date: '2026.11',
-    cover: img('game-cover.jpg'),
+    cover: img('little-fish.jpg'),
     links: [
       {
         label: 'https://Delph4312.github.io/little-fish/',
@@ -27,7 +27,8 @@ export const works = [
     category: '网站',
     title: '悦览时光网站前端设计与实现',
     date: '2026.05',
-    cover: img('yuelan-cover.jpg'),
+    cover: img('yuelan-home.jpg'),
+    gallery: [img('yuelan-bookshelf.jpg')],
     links: [
       {
         label: 'https://Delph4312.github.io/yuelan-time/',
@@ -46,8 +47,8 @@ export const works = [
     category: '网站',
     title: '《承遗阁》网站前端设计与实现',
     date: '2026.08',
-    cover: img('chengyi-cover.jpg'),
-    gallery: [img('chengyi-gallery-1.jpg'), img('chengyi-gallery-2.jpg')],
+    cover: img('chengyi-home.jpg'),
+    gallery: [img('chengyi-community.jpg')],
     links: [
       {
         label: 'https://Delph4312.github.io/chengyi-pavilion/',
