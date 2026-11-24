@@ -8,8 +8,8 @@ defineProps({
 <template>
   <article class="work-block">
     <h2 class="work-title">{{ work.title }}</h2>
-    <div class="work-meta">
-      <div class="work-links">
+    <div v-if="(work.links && work.links.length) || work.date" class="work-meta">
+      <div v-if="work.links && work.links.length" class="work-links">
         <a
           v-for="link in work.links"
           :key="link.url"
@@ -21,10 +21,25 @@ defineProps({
           {{ link.label }}
         </a>
       </div>
-      <time class="work-date">{{ work.date }}</time>
+      <time v-if="work.date" class="work-date">{{ work.date }}</time>
     </div>
 
-    <img :src="work.cover" :alt="work.title + ' 页面截图'" class="work-cover" />
+    <video
+      v-if="work.videoSrc"
+      :src="work.videoSrc"
+      :poster="work.cover"
+      :aria-label="work.title + ' 视频'"
+      class="work-cover work-video"
+      controls
+      preload="none"
+      playsinline
+    ></video>
+    <img
+      v-else
+      :src="work.cover"
+      :alt="work.title + ' 作品预览'"
+      :class="['work-cover', { 'work-cover--tall': work.tallCover }]"
+    />
 
     <div class="work-body">
       <p v-for="(paragraph, index) in work.paragraphs" :key="index">{{ paragraph }}</p>

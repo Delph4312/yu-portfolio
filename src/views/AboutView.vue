@@ -11,10 +11,10 @@ import { projects } from '../data/works'
     <main class="content about-content">
       <p class="about-lead">你好，这里是屿。</p>
       <p>
-        一个记录学习与创作过程的小站。这里收录了网页解谜游戏与网站前端设计作品，从 UI 原型、视觉稿到页面搭建与交互实现，完整呈现每个项目从想法到上线的过程。
+        一个记录学习与创作过程的小站。这里收录了网页解谜游戏、网站前端设计、平面设计与视频作品，从 UI 原型、视觉稿到页面搭建与动态影像，完整呈现每个项目从想法到成品的过程。
       </p>
       <p>
-        常用工具与技能包括 Figma、VS Code、Vue 3、Vite、Vue Router、HTML5、CSS3 与 JavaScript。项目源码均托管于 GitHub，点击下面的链接可以访问在线演示或查看仓库。
+        常用工具与技能包括 Figma、Adobe Illustrator、剪映、AE、AU、VS Code、Vue 3、Vite、Vue Router、HTML5、CSS3 与 JavaScript。网页项目源码均托管于 GitHub，点击下面的链接可以访问在线演示或查看仓库。
       </p>
 
       <div class="section-divider"><span>技能</span></div>
@@ -25,6 +25,8 @@ import { projects } from '../data/works'
         <span>HTML5 / CSS3</span>
         <span>JavaScript</span>
         <span>响应式布局</span>
+        <span>Adobe Illustrator</span>
+        <span>剪映 / AE / AU</span>
       </div>
 
       <div class="section-divider"><span>项目</span></div>

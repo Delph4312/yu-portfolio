@@ -20,6 +20,10 @@ const results = computed(() => {
   )
 })
 
+function resultLink(work) {
+  return work.links?.[0]?.url || `#/category?cat=${encodeURIComponent(work.category)}`
+}
+
 function submit() {
   const q = keyword.value.trim()
   focused.value = false
@@ -71,13 +75,13 @@ onBeforeUnmount(() => document.removeEventListener('click', closeOnOutside))
             <a
               v-for="work in results"
               :key="work.id"
-              :href="work.links[0].url"
+              :href="resultLink(work)"
               target="_blank"
               rel="noopener noreferrer"
               class="search-result"
             >
               <span>{{ work.title }}</span>
-              <small>{{ work.category }} · {{ work.date }}</small>
+              <small>{{ work.category }}<template v-if="work.date"> · {{ work.date }}</template></small>
             </a>
             <button type="button" class="search-all" @click="submit">查看分类页全部结果 →</button>
           </template>

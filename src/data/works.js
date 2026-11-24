@@ -1,5 +1,9 @@
 const base = import.meta.env.BASE_URL || './'
 export const img = (name) => `${base}images/${name}`
+export const video = (name) => `${base}videos/${name}`
+
+const site = 'https://delph4312.github.io/yu-portfolio/'
+const asset = (path) => site + path
 
 export const works = [
   {
@@ -62,6 +66,78 @@ export const works = [
       '独立完成 UI 还原、页面搭建与动效交互开发，借助 Vue Router 统一管理页面路由。',
     ],
     tags: ['Vue 3', 'Vite', 'Vue Router', '响应式', 'Figma'],
+  },
+  {
+    id: 'ipod-web',
+    category: '平面',
+    title: 'IPod网页',
+    cover: img('ipod-web.jpg'),
+    tallCover: true,
+    links: [
+      {
+        label: asset('images/ipod-web.jpg'),
+        url: asset('images/ipod-web.jpg'),
+      },
+    ],
+    paragraphs: [
+      '本作品为 iPod 主题产品宣传单页，围绕复古 iPod 播放器打造品牌感产品展示页面，包含头部宣传横幅、产品场景展示、多版本产品选型、色彩选择、技术参数板块，以简约干净的苹果风格视觉呈现产品卖点，传递复古随身音乐设备的氛围感，版式层次清晰，图文搭配引导用户浏览产品信息。',
+      '使用Adobe Illustrator完成全稿视觉设计，通过钢笔工具绘制产品造型、色块分割版式，搭配文字排版、图片置入与色彩调配，统一画面调性，独立完成构图规划、视觉元素绘制、图文层级编排，塑造简约高级的苹果风产品宣传视觉。',
+    ],
+    tags: ['平面设计', 'Adobe Illustrator', '产品宣传页', '版式设计'],
+  },
+  {
+    id: 'wuchang-dami',
+    category: '视频',
+    title: '五常大米AI短视频',
+    cover: img('wuchang-dami.jpg'),
+    videoSrc: video('wuchang-dami.mp4'),
+    links: [
+      {
+        label: asset('videos/wuchang-dami.mp4'),
+        url: asset('videos/wuchang-dami.mp4'),
+      },
+    ],
+    paragraphs: [
+      '五常大米主题宣传短视频，围绕五常大米地域特色、产品优势展开内容叙事，通过画面切换展示稻米产地风貌、种植环境与成品质感，节奏轻快，适合短视频平台传播，完整呈现农产品宣传短片的叙事逻辑。',
+      '前期借助 DeepSeek 完成宣传脚本撰写，使用智谱清言生成分镜提示词，再由豆包生成对应画面素材，最后在剪映中完成素材整合、转场剪辑、字幕配乐与画面优化，独立完成从策划、素材生成到成片输出的全流程创作。',
+    ],
+    tags: ['AI 短视频', 'DeepSeek', '智谱清言', '豆包', '剪映'],
+  },
+  {
+    id: 'dingfengbo',
+    category: '视频',
+    title: '视频剪辑《定风波·莫听穿林打叶声》',
+    cover: img('dingfengbo.jpg'),
+    videoSrc: video('dingfengbo.mp4'),
+    links: [
+      {
+        label: asset('videos/dingfengbo.mp4'),
+        url: asset('videos/dingfengbo.mp4'),
+      },
+    ],
+    paragraphs: [
+      '《定风波・莫听穿林打叶声》诗词赏析短视频，围绕这首宋词进行解读展示，搭配诗词文本、意境画面串联内容，讲解词作背景与内涵，营造古典诗意氛围，适合诗词文化科普传播。',
+      '素材包含手机实拍画面，同时整合搜集的图片、视频、背景音乐等网络素材，使用剪映完成素材编排、字幕制作与成片优化，独立完成素材筛选、叙事剪辑以及整体节奏把控。',
+    ],
+    tags: ['视频剪辑', '剪映', '诗词赏析', '素材整合'],
+  },
+  {
+    id: 'wogan-guiyun',
+    category: '视频',
+    title: '视频剪辑《山野沃柑，桂韵流芳》',
+    cover: img('wogan-guiyun.jpg'),
+    videoSrc: video('wogan-guiyun.mp4'),
+    links: [
+      {
+        label: asset('videos/wogan-guiyun.mp4'),
+        url: asset('videos/wogan-guiyun.mp4'),
+      },
+    ],
+    paragraphs: [
+      '本作品为广西武鸣沃柑主题农业纪实栏目包装短片，围绕武鸣沃柑产业、壮乡农耕文化展开叙事，包含片头、片花、正片导视、片尾等成套栏目视觉内容，融合田园实景与本土文化元素，传递特色农业助力乡村振兴的主题，适配纪实栏目播出风格。',
+      '借助DeepSeek和豆包辅助撰写解说词，使用Illustrator 绘制栏目专属角标，通过AU完成配音录制，以AE作为核心软件制作导视条、字幕动画等动态包装效果，整合多渠道搜集的图文视频素材，统一调色、把控动画节奏，独立完成整套栏目包装从文案策划、图形设计到动态合成的全流程创作。',
+    ],
+    tags: ['栏目包装', 'AE 动效', 'Illustrator', 'AU 配音'],
   },
 ]
 

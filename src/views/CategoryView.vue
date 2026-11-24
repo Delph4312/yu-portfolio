@@ -6,7 +6,7 @@ import { works } from '../data/works'
 
 const route = useRoute()
 const router = useRouter()
-const tabs = ['全部', '游戏', '网站']
+const tabs = ['全部', '游戏', '网站', '平面', '视频']
 const defaultTab = '网站'
 const activeTab = ref(defaultTab)
 
