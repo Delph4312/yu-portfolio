@@ -1,7 +1,5 @@
 const base = import.meta.env.BASE_URL || './'
 export const img = (name) => `${base}images/${name}`
-export const video = (name) => `${base}videos/${name}`
-export const hls = (name) => `${base}hls/${name}/index.m3u8`
 
 const site = 'https://delph4312.github.io/yu-portfolio/'
 const asset = (path) => site + path
@@ -91,8 +89,7 @@ export const works = [
     category: '视频',
     title: '五常大米AI短视频',
     cover: img('wuchang-dami.jpg'),
-    hlsSrc: hls('wuchang-dami'),
-    videoSrc: video('wuchang-dami.mp4'),
+    posterOnly: true,
     links: [
       {
         label: asset('videos/wuchang-dami.mp4'),
@@ -110,8 +107,7 @@ export const works = [
     category: '视频',
     title: '视频剪辑《山野沃柑，桂韵流芳》',
     cover: img('wogan-guiyun.jpg'),
-    hlsSrc: hls('wogan-guiyun'),
-    videoSrc: video('wogan-guiyun.mp4'),
+    posterOnly: true,
     links: [
       {
         label: asset('videos/wogan-guiyun.mp4'),

@@ -303,6 +303,21 @@ a {
   overflow-wrap: anywhere;
 }
 
+.work-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 6px;
+  min-width: 0;
+}
+
+.work-link-note {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #93a49a;
+  white-space: nowrap;
+}
+
 .work-link:hover,
 .project-list a:hover,
 .about-contact a:hover {
@@ -321,12 +336,6 @@ a {
   width: 100%;
   height: auto;
   border-radius: 3px;
-}
-
-.work-video {
-  aspect-ratio: 16 / 9;
-  background: #000;
-  object-fit: contain;
 }
 
 .work-cover--tall {
@@ -698,6 +707,10 @@ a {
 
   .work-link {
     font-size: 10.5px;
+  }
+
+  .work-link-note {
+    font-size: 10px;
   }
 
   .work-body {
