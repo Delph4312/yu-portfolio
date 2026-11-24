@@ -104,24 +104,6 @@ export const works = [
     tags: ['AI 短视频', 'DeepSeek', '智谱清言', '豆包', '剪映'],
   },
   {
-    id: 'dingfengbo',
-    category: '视频',
-    title: '视频剪辑《定风波·莫听穿林打叶声》',
-    cover: img('dingfengbo.jpg'),
-    videoSrc: video('dingfengbo.mp4'),
-    links: [
-      {
-        label: asset('videos/dingfengbo.mp4'),
-        url: asset('videos/dingfengbo.mp4'),
-      },
-    ],
-    paragraphs: [
-      '《定风波・莫听穿林打叶声》诗词赏析短视频，围绕这首宋词进行解读展示，搭配诗词文本、意境画面串联内容，讲解词作背景与内涵，营造古典诗意氛围，适合诗词文化科普传播。',
-      '素材包含手机实拍画面，同时整合搜集的图片、视频、背景音乐等网络素材，使用剪映完成素材编排、字幕制作与成片优化，独立完成素材筛选、叙事剪辑以及整体节奏把控。',
-    ],
-    tags: ['视频剪辑', '剪映', '诗词赏析', '素材整合'],
-  },
-  {
     id: 'wogan-guiyun',
     category: '视频',
     title: '视频剪辑《山野沃柑，桂韵流芳》',
